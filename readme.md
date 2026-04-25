@@ -1,74 +1,95 @@
-\# WhatsApp Bot 🤖
+# WhatsApp AI Bot 🤖
 
+Smart WhatsApp chatbot built with **Python, Flask, Twilio, and Google Sheets** for lead generation, customer support, and business automation.
 
+## 🌐 What It Does
 
-A WhatsApp chatbot built with Python, Flask, Twilio, and Google Sheets.
+This bot can automate WhatsApp conversations for businesses by replying instantly, collecting customer details, and storing leads directly in Google Sheets.
 
+## 🚀 Features
 
+* 👋 Greets users by name
+* 📋 Numbered service menu
+* 🧠 Smart FAQ replies
+* 📥 Collects leads automatically
+* 💰 Captures budget & deadline
+* 📊 Saves data to Google Sheets
+* ⚡ Instant automated responses
 
-\## Features
+## 💼 Ideal For
 
-\- Greets users by name
+* Agencies
+* Local businesses
+* Coaches
+* Ecommerce stores
+* Service providers
 
-\- Numbered service menu
+## 🛠️ Tech Stack
 
-\- Collects leads (name, service, budget, deadline)
+* Python
+* Flask
+* Twilio WhatsApp API
+* Google Sheets API
+* Render / Ngrok
 
-\- Saves leads to Google Sheets
+## 📸 Demo Preview
 
-\- FAQ replies for services, pricing, contact
+(Add screenshot here)
 
+## ⚙️ Setup Guide
 
-
-\## Setup
-
-
-
-\### 1. Install dependencies
+### 1️⃣ Install Dependencies
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
+### 2️⃣ Add Google Credentials
 
-
-\### 2. Add credentials.json
-
-\- Create a Google Cloud service account
-
-\- Download the JSON key and rename to `credentials.json`
-
-\- Place it in the project root
-
-
-
-\### 3. Run the bot
+* Create Google Cloud Service Account
+* Download JSON key
+* Rename file to:
 
 ```bash
+credentials.json
+```
 
+* Place inside project root folder
+
+### 3️⃣ Run App
+
+```bash
 python app.py
-
 ```
 
+### 4️⃣ Connect Twilio Webhook
 
-
-\### 4. Expose with ngrok
+Use ngrok:
 
 ```bash
-
 ngrok http 5000
-
 ```
 
-Set the ngrok URL as your Twilio webhook:
+Then set webhook URL:
 
-`https://your-ngrok-url/whatsapp`
+```bash
+https://your-ngrok-url/whatsapp
+```
 
+## 🔒 Security
 
+Never upload:
 
-\## Environment
+```bash
+credentials.json
+```
 
-Never push `credentials.json` to GitHub. It is in `.gitignore`.
+Keep it inside `.gitignore`
 
+## 👨‍💻 Built By
+
+**Piyush Thakkar**
+
+GitHub: https://github.com/piyushthakkar321
+
+Portfolio: https://portfolio-website-seven-chi-27.vercel.app/
